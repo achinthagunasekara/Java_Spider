@@ -43,10 +43,8 @@ public class SpiderCanvas extends JComponent {
         if (xPos > windowWidth + spiderWidth) {
             xPos = -spiderWidth;
         }
-
+System.out.println(xPos);
         Image img1 = Toolkit.getDefaultToolkit().getImage("images/spider.gif");
-        //gg.setColor(Color.RED);
-        //gg.fillRect(x, h/2 + trainH, trainW, trainH);
         gg.drawImage(img1, xPos, windowHeight/2, this);
 
         lastXPos = xPos;
