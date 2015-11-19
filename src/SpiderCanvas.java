@@ -48,12 +48,11 @@ public class SpiderCanvas extends JComponent {
 
         int xPos = lastXPos + spiderSpeed;
 
+        //chanage spiders Y position when coming back on the screen
         if (xPos > windowWidth + spiderWidth) {
             xPos = -spiderWidth;
         }
-        
-        System.out.println("Spider x is " + xPos + " and y is " + lastYPos);
-        
+         
         Image img1 = Toolkit.getDefaultToolkit().getImage("images/spider.gif");
         gg.drawImage(img1, xPos, lastYPos, this);
 
