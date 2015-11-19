@@ -42,7 +42,7 @@ public class SpiderCanvas extends JComponent {
         int spiderSpeed = 3;
         
         if(lastYPos == 0 || lastXPos == -spiderWidth) {
-            lastYPos = rand.nextInt(windowWidth-0) + 0;
+            lastYPos = rand.nextInt(windowHeight-0) + 0;
         }
         
 
@@ -51,7 +51,9 @@ public class SpiderCanvas extends JComponent {
         if (xPos > windowWidth + spiderWidth) {
             xPos = -spiderWidth;
         }
-System.out.println(xPos);
+        
+        System.out.println("Spider x is " + xPos + " and y is " + lastYPos);
+        
         Image img1 = Toolkit.getDefaultToolkit().getImage("images/spider.gif");
         gg.drawImage(img1, xPos, lastYPos, this);
 
