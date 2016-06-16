@@ -7,8 +7,3 @@ It's a useless application, but fun to watch!
 Currntly only support Mac OS.
 
 ![Spider](images/spider.gif)
-
-
-
-
-
